@@ -1,200 +1,37 @@
 <!doctype html>
-<html lang="ar" dir="rtl" data-theme="dark">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#080b16">
-  <meta name="description" content="منصة تعليمية تفاعلية لتعلم الذكاء الاصطناعي وHTML وCSS وJavaScript، مع اختبار وشهادة إنجاز.">
-  <title>أكاديمية المستقبل الذكية | لوحة التعلم</title>
+  <meta name="description" content="مرحبًا بك في أكاديمية المستقبل الذكية، مشروع تعليمي تفاعلي في الذكاء الاصطناعي والبرمجة.">
+  <title>أكاديمية المستقبل الذكية | البداية</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="app.js" defer></script>
 </head>
-<body>
-  <a class="skip-link" href="#main">انتقل إلى المحتوى</a>
-  <header class="site-header">
-    <a class="brand" href="#home" aria-label="أكاديمية المستقبل الذكية، الرئيسية">
+<body class="welcome-page">
+  <main class="welcome-shell">
+    <a class="brand welcome-brand" href="index.html" aria-label="أكاديمية المستقبل الذكية">
       <span class="brand-mark" aria-hidden="true">م</span>
       <span>أكاديمية المستقبل <span class="brand-accent">الذكية</span></span>
     </a>
-    <button class="icon-button menu-toggle" type="button" aria-label="فتح قائمة التنقل" aria-expanded="false" aria-controls="primary-nav">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-    </button>
-    <nav class="main-nav" id="primary-nav" aria-label="التنقل الرئيسي">
-      <a class="nav-link active" href="#home">الرئيسية</a>
-      <a class="nav-link" href="#ai">الذكاء الاصطناعي</a>
-      <a class="nav-link" href="#coding">أساسيات البرمجة</a>
-      <a class="nav-link" href="#quiz">الاختبار</a>
-    </nav>
-    <button class="icon-button theme-toggle" type="button" aria-label="تفعيل الوضع النهاري" title="تبديل المظهر">
-      <svg class="theme-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
-    </button>
-  </header>
-
-  <main id="main">
-    <section class="hero section-wrap" id="home">
-      <div class="hero-copy reveal">
-        <span class="eyebrow"><span class="status-dot"></span> منصة تعلّم تفاعلية · ٢٠٢٦</span>
-        <h1>خطوتك الأولى نحو<br><span class="gradient-text">مستقبلٍ أذكى.</span></h1>
-        <p>اكتشف كيف يفكر الذكاء الاصطناعي، وتعلّم لغة الويب، وحوّل فضولك إلى مهارة تصنع الفرق.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#ai">ابدأ التعلّم <span aria-hidden="true">←</span></a>
-          <a class="text-link" href="#quiz">اختبر معلوماتك <span aria-hidden="true">↗</span></a>
-        </div>
-        <div class="hero-proof"><span class="proof-icon">✦</span><span>رحلة تعليمية قصيرة، عملية وممتعة</span></div>
-      </div>
-      <div class="hero-visual reveal">
-        <div class="hero-glow"></div>
-        <img class="hero-image" src="images/ai-brain.svg" alt="رسم توضيحي لشبكة ذكاء اصطناعي مضيئة">
-        <div class="floating-card float-card-top"><span class="mini-icon purple">✧</span><span><strong>تعلّم بذكاء</strong><small>خطوة صغيرة كل يوم</small></span></div>
-        <div class="floating-card float-card-bottom"><span class="live-pulse"></span><span><strong id="hero-progress">٠٪</strong><small>نسبة تقدّمك</small></span></div>
-        <div class="visual-caption">ابتكر · تعلّم · انطلق</div>
-      </div>
-    </section>
-
-    <section class="dashboard section-wrap" aria-label="لوحة تقدمي">
-      <div class="dashboard-heading">
-        <div><span class="section-kicker">مساحتك التعليمية</span><h2>رحلتك حتى الآن</h2></div>
-        <span class="dashboard-tag"><span class="status-dot"></span> محفوظة على جهازك</span>
-      </div>
-      <div class="dashboard-grid">
-        <article class="stat-card glass-card">
-          <span class="stat-icon icon-blue">◈</span><span class="stat-label">الدروس المكتملة</span>
-          <strong class="stat-value"><span id="completed-count">٠</span><small> / ٣</small></strong>
-          <span class="stat-note">تابع التعلّم لتتقدم</span>
-        </article>
-        <article class="stat-card glass-card">
-          <span class="stat-icon icon-violet">✦</span><span class="stat-label">نتيجة الاختبار</span>
-          <strong class="stat-value"><span id="best-score">—</span><small id="score-unit"></small></strong>
-          <span class="stat-note">أفضل نتيجة محفوظة</span>
-        </article>
-        <article class="progress-card glass-card">
-          <div class="progress-heading"><div><span class="stat-label">تقدّم التعلّم</span><strong id="progress-label">٠٪</strong></div><span class="progress-ring" aria-hidden="true">↗</span></div>
-          <div class="progress-track" role="progressbar" aria-label="التقدم في التعلم" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progress-bar"><span id="progress-fill"></span></div>
-          <span class="stat-note">أكمل الدروس ثم اجتز الاختبار</span>
-        </article>
-      </div>
-    </section>
-
-    <section class="content-section section-wrap" id="ai">
-      <div class="section-heading reveal">
-        <div><span class="section-kicker">01 — تعرّف إلى التقنية</span><h2>الذكاء الاصطناعي،<br><span class="muted-heading">ببساطة ووضوح.</span></h2></div>
-        <p>تقنية تساعد الحواسيب على التعلّم من البيانات وإنجاز مهام تحتاج عادةً إلى ذكاء بشري.</p>
-      </div>
-      <div class="ai-feature glass-card reveal">
-        <div class="ai-feature-copy">
-          <span class="feature-label"><span>✦</span> الذكاء الاصطناعي</span>
-          <h3>حين تتعلّم الآلة<br>من الأمثلة.</h3>
-          <p>بدلًا من كتابة قاعدة لكل حالة، نزوّد النظام بأمثلة كثيرة؛ فيكتشف الأنماط ويستخدمها للتنبؤ أو التصنيف.</p>
-          <div class="feature-tags"><span>تعلّم الآلة</span><span>البيانات</span><span>حل المشكلات</span></div>
-        </div>
-        <div class="ai-feature-art"><img src="images/ai-data.svg" alt="تمثيل بصري للبيانات والشبكات الذكية" loading="lazy"></div>
-      </div>
-      <div class="concept-grid">
-        <article class="concept-card glass-card reveal">
-          <div class="concept-image"><img src="images/ai-robot.svg" alt="رسم توضيحي لمساعد ذكي" loading="lazy"></div>
-          <span class="concept-number">01 / المفهوم</span><h3>ما هو الذكاء الاصطناعي؟</h3>
-          <p>مجال يطوّر أنظمة قادرة على التعرّف إلى الأنماط والتعلّم واتخاذ قرارات ضمن مهمة محددة.</p>
-          <span class="concept-example">مثال: اقتراح الفيديو التالي الذي قد يعجبك.</span>
-        </article>
-        <article class="concept-card glass-card reveal">
-          <div class="concept-image image-variant"><img src="images/ai-data.svg" alt="نقاط بيانات مترابطة" loading="lazy"></div>
-          <span class="concept-number">02 / كيف يتعلّم؟</span><h3>البيانات تصنع الفرق</h3>
-          <p>يتدرّب النموذج على أمثلة منظّمة، ثم يقارن توقعاته بالإجابات ليتحسّن تدريجيًا.</p>
-          <span class="concept-example">مثال: تمييز صور القطط بعد رؤية صور كثيرة.</span>
-        </article>
-        <article class="concept-card glass-card reveal">
-          <div class="concept-image image-variant-two"><img src="images/ai-brain.svg" alt="شبكة عصبية مضيئة" loading="lazy"></div>
-          <span class="concept-number">03 / أثره حولنا</span><h3>تقنية في حياتنا اليومية</h3>
-          <p>يساعد في الترجمة، والملاحة، وتنظيم الصور، واكتشاف الأنماط في مجالات متعددة.</p>
-          <span class="concept-example">استخدمه بوعي، وتحقق دائمًا من المعلومات.</span>
-        </article>
-      </div>
-      <div class="lesson-action">
-        <p><strong>أنهيت التعرّف إلى الذكاء الاصطناعي؟</strong><span>علّم هذا الدرس كمكتمل لحفظ تقدمك.</span></p>
-        <button class="button button-outline lesson-button" type="button" data-lesson="ai">إكمال الدرس <span aria-hidden="true">✓</span></button>
-      </div>
-    </section>
-
-    <section class="content-section coding-section section-wrap" id="coding">
-      <div class="section-heading reveal">
-        <div><span class="section-kicker">02 — اصنع شيئًا بنفسك</span><h2>ثلاث لغات،<br><span class="muted-heading">صفحة واحدة.</span></h2></div>
-        <p>تعرّف إلى الأدوات الأساسية التي تجعل صفحات الويب حيّة، جميلة، وتستجيب لتفاعلك.</p>
-      </div>
-      <div class="code-grid">
-        <article class="code-card glass-card reveal">
-          <div class="code-card-top"><span class="language-icon html-icon">&lt;/&gt;</span><span class="code-badge">01 · الهيكل</span></div>
-          <h3>HTML</h3><p>يبني محتوى الصفحة ويحدّد عناصرها، مثل العناوين والفقرات والروابط.</p>
-          <pre class="code-sample"><code><span class="code-tag">&lt;h1&gt;</span>مرحبًا بالعالم<span class="code-tag">&lt;/h1&gt;</span>
-<span class="code-tag">&lt;p&gt;</span>هذه صفحتي الأولى.<span class="code-tag">&lt;/p&gt;</span></code></pre>
-          <p class="code-caption">يظهر عنوان كبير وفقرة نصية.</p>
-        </article>
-        <article class="code-card glass-card reveal">
-          <div class="code-card-top"><span class="language-icon css-icon">✳</span><span class="code-badge">02 · المظهر</span></div>
-          <h3>CSS</h3><p>يضيف الألوان والتنسيقات والمسافات ليمنح الصفحة شخصيتها الخاصة.</p>
-          <pre class="code-sample"><code><span class="code-selector">h1</span> {
-  <span class="code-property">color</span>: <span class="code-value">#8b7bff</span>;
-  <span class="code-property">text-align</span>: <span class="code-value">center</span>;
-}</code></pre>
-          <p class="code-caption">يغيّر لون العنوان ومحاذاته.</p>
-        </article>
-        <article class="code-card glass-card reveal">
-          <div class="code-card-top"><span class="language-icon js-icon">JS</span><span class="code-badge">03 · التفاعل</span></div>
-          <h3>JavaScript</h3><p>يجعل الصفحة تفاعلية، مثل الاستجابة للنقر أو تحديث المحتوى.</p>
-          <pre class="code-sample"><code><span class="code-keyword">const</span> زر = document
-  .querySelector(<span class="code-string">'button'</span>);
-زر.onclick = () =&gt;
-  alert(<span class="code-string">'أهلًا!'</span>);</code></pre>
-          <p class="code-caption">يعرض رسالة عند الضغط على الزر.</p>
-        </article>
-      </div>
-      <div class="lesson-action">
-        <p><strong>تعرّفت إلى أساسيات لغات الويب؟</strong><span>جرّب الأمثلة ثم سجّل إكمال الدرس.</span></p>
-        <button class="button button-outline lesson-button" type="button" data-lesson="coding">إكمال الدرس <span aria-hidden="true">✓</span></button>
-      </div>
-    </section>
-
-    <section class="content-section quiz-section section-wrap" id="quiz">
-      <div class="section-heading reveal">
-        <div><span class="section-kicker">03 — تحدّي المعرفة</span><h2>هل أنت مستعد<br><span class="muted-heading">للاختبار؟</span></h2></div>
-        <p>أجب عن الأسئلة العشرة، راجع الإجابات الصحيحة، واحصل على شهادة إنجاز عند تحقيق ٧ درجات أو أكثر.</p>
-      </div>
-      <form class="quiz-panel glass-card reveal" id="quiz-form">
-        <div class="quiz-topline"><span class="quiz-mark">✦</span><span>اختبار الأكاديمية</span><span class="quiz-count">١٠ أسئلة</span></div>
-        <div class="quiz-fields">
-          <label class="field-label" for="student-name">اسم الطالب على الشهادة</label>
-          <input class="text-input" id="student-name" name="studentName" type="text" maxlength="60" placeholder="اكتب اسمك الكامل" required autocomplete="name">
-        </div>
-        <div id="quiz-questions" class="question-list"></div>
-        <div class="quiz-submit-row"><p>درجة الاجتياز <strong>٧ من ١٠</strong></p><button class="button button-primary" type="submit">اعرض نتيجتي <span aria-hidden="true">←</span></button></div>
-        <div class="quiz-result" id="quiz-result" role="status" aria-live="polite" hidden></div>
-        <div class="answer-review" id="answer-review" hidden></div>
-      </form>
-    </section>
-
-    <section class="certificate-section section-wrap" id="certificate" hidden>
-      <div class="certificate-intro reveal"><span class="section-kicker">إنجاز يستحق الاحتفاء</span><h2>أكملت التحدي. <span class="gradient-text">أحسنت!</span></h2><p>شهادتك جاهزة للطباعة. يمكنك إعادة الاختبار لتحسين درجتك.</p></div>
-      <article class="certificate reveal" id="certificate-card">
-        <div class="certificate-inner">
-          <div class="certificate-top"><span class="brand-mark" aria-hidden="true">م</span><span>أكاديمية المستقبل الذكية</span><span class="certificate-stars">✦ ✧ ✦</span></div>
-          <div class="certificate-content"><span class="certificate-overline">شهادة إنجاز</span><h2>شهادة إتمام</h2><p>تشهد الأكاديمية بأن الطالب/ة</p><strong class="certificate-name" id="certificate-name">—</strong><p>قد اجتاز اختبار أساسيات الذكاء الاصطناعي والبرمجة</p><div class="certificate-score"><span>النتيجة</span><strong id="certificate-score">٠ / ١٠</strong></div></div>
-          <div class="certificate-footer"><span>مشروع تعليمي تفاعلي</span><span>تاريخ الإنجاز: <strong id="certificate-date">—</strong></span></div>
-        </div>
-      </article>
-      <button class="button button-primary print-button" id="print-certificate" type="button">طباعة الشهادة <span aria-hidden="true">↗</span></button>
-    </section>
-
-    <section class="contact-section section-wrap" id="contact">
-      <div class="contact-card glass-card reveal">
-        <div class="contact-copy"><span class="section-kicker">تواصل معنا</span><h2>لديك سؤال؟<br><span class="muted-heading">نحن هنا.</span></h2><p>أرسل رسالتك التجريبية، وستظهر لك رسالة تأكيد. لا يتم إرسال أي بيانات أو تخزينها.</p></div>
-        <form class="contact-form" id="contact-form">
-          <label class="field-label" for="contact-name">الاسم</label><input class="text-input" id="contact-name" name="name" type="text" placeholder="اسمك" required maxlength="80" autocomplete="name">
-          <label class="field-label" for="contact-email">البريد الإلكتروني</label><input class="text-input" id="contact-email" name="email" type="email" placeholder="name@example.com" required maxlength="120" autocomplete="email" dir="ltr">
-          <button class="button button-primary contact-submit" type="submit">إرسال تجريبي <span aria-hidden="true">←</span></button>
-          <p class="form-message" id="contact-message" role="status" aria-live="polite" hidden></p>
-        </form>
-      </div>
-    </section>
+    <div class="welcome-content">
+      <span class="eyebrow"><span class="status-dot"></span> بوابتك إلى عالم الغد</span>
+      <h1>المستقبل لا يُنتظر،<br><span class="gradient-text">بل نصنعه معًا.</span></h1>
+      <p class="welcome-copy">رحلتك لاكتشاف الذكاء الاصطناعي وأساسيات البرمجة تبدأ من هنا. تعلّم، جرّب، واترك بصمتك الرقمية.</p>
+      <p class="student-credit">مشروع الطالب <strong>زايد طلال خلف العنزي</strong></p>
+      <a class="button button-primary button-large welcome-continue" href="home.html">
+        أكمل <span aria-hidden="true">←</span>
+      </a>
+    </div>
+    <div class="welcome-orbit orbit-one" aria-hidden="true"></div>
+    <div class="welcome-orbit orbit-two" aria-hidden="true"></div>
+    <div class="welcome-art" aria-hidden="true">
+      <div class="welcome-art-glow"></div>
+      <img src="images/ai-brain.svg" alt="">
+      <span class="float-chip chip-top">AI <span>✦</span></span>
+      <span class="float-chip chip-bottom">&lt;/&gt; <span>كود المستقبل</span></span>
+    </div>
+    <footer class="welcome-footer"><span>أكاديمية المستقبل الذكية</span><span>مشروع تعليمي تفاعلي · ٢٠٢٦</span></footer>
   </main>
-  <footer class="site-footer section-wrap"><a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">م</span><span>أكاديمية المستقبل <span class="brand-accent">الذكية</span></span></a><p>صُمّم بشغف للتعلّم وصناعة المستقبل.</p><a class="back-to-top" href="#home">العودة للأعلى ↑</a></footer>
 </body>
 </html>
