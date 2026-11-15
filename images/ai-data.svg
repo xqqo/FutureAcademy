@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 340" fill="none">
+  <defs><linearGradient id="d" x1="79" y1="47" x2="384" y2="290" gradientUnits="userSpaceOnUse"><stop stop-color="#B3A7FF"/><stop offset=".55" stop-color="#7767F6"/><stop offset="1" stop-color="#43D1EB"/></linearGradient></defs>
+  <circle cx="240" cy="171" r="133" fill="#7865FF" fill-opacity=".055" stroke="#9D92FF" stroke-opacity=".15" stroke-dasharray="4 10"/>
+  <g stroke="url(#d)" stroke-opacity=".7" stroke-width="2">
+    <path d="m126 103 84 54 96-67 56 70-89 95-115-20-67-78 35-54Zm84 54-52 78m52-78 63 20m-63-20 23 90m73-157-33 87m89-17-89 17m-89 73 83-3"/>
+    <path d="m126 103 145 121m35-134-113 153m153-83-124 86"/>
+  </g>
+  <g fill="#D4D0FF" stroke="#8D7DFF" stroke-width="3"><circle cx="126" cy="103" r="10"/><circle cx="210" cy="157" r="12"/><circle cx="306" cy="90" r="11"/><circle cx="362" cy="160" r="9"/><circle cx="273" cy="255" r="12"/><circle cx="158" cy="235" r="9"/><circle cx="241" cy="247" r="7"/></g>
+  <circle cx="210" cy="157" r="24" stroke="#65DEF0" stroke-opacity=".45" stroke-width="2"/><circle cx="273" cy="255" r="22" stroke="#A298FF" stroke-opacity=".4" stroke-width="2"/>
+  <rect x="174" y="69" width="73" height="26" rx="13" fill="#15192D" stroke="#7166E7"/><text x="210" y="87" fill="#C5C0FF" font-family="Arial,sans-serif" font-size="12" text-anchor="middle">DATA / AI</text>
+  <path d="m84 193 8 8 8-8m285-86 7 7 7-7M93 70l6 6 6-6" stroke="#57D8EE" stroke-width="2" stroke-linecap="round"/>
+</svg>
