@@ -279,6 +279,7 @@ img { display: block; max-width: 100%; }
 .welcome-copy { max-width: 460px; margin: 0; color: #a4a9c2; font-size: 14px; line-height: 2; }
 .student-credit { margin: 23px 0 19px; color: #858ca8; font-size: 11px; }
 .student-credit strong { color: #e4e0ff; }
+.student-class { display: block; margin-top: 7px; color: #a4a9c2; }
 .button-large { min-height: 51px; padding-inline: 23px; font-size: 13px; }
 .welcome-art { position: relative; display: grid; min-height: 480px; place-items: center; }
 .welcome-art > img { z-index: 1; width: min(100%, 500px); filter: drop-shadow(0 20px 45px rgba(104, 85, 235, .15)); animation: float 7s ease-in-out infinite; }
